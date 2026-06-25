@@ -164,6 +164,31 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
+        .mui-icon {
+            width: 28px;
+            height: 28px;
+            color: #47C278;
+            fill: currentColor;
+        }
+
+        /* Hero: slot 2:1 — exportar imagen a 880×440 px (@2x) o 440×220 px (@1x) */
+        .hero-image-float {
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow:
+                0 6px 10px -8px rgba(26, 27, 31, 0.14),
+                0 10px 18px -12px rgba(26, 27, 31, 0.1);
+        }
+
+        .hero-image-float img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
     </style>
 <style>
     body {
@@ -185,9 +210,8 @@ SOLICITÁ TUS APLICACIONES CON DRONES DESDE LA APP.
 Simple. Claro. Rápido.
 </p>
 </div>
-<div class="relative w-full h-48 rounded-xl overflow-hidden shadow-lg mt-lg">
-<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCo_MlW3yi-C9BKlcEWnY5EMH__dehBxYaoxQ7qZbLYiuyyfq8gaa_oppV3_7r-0YJYMRA0r0qcOn-QxQyt-oF5l6StU5jwpV5BpjakC9xr669PGO65E2ttOYAEuPTTpW4WHuPdFxpCiQTgL14D8TMSyylUf1Jci8Llcd7GnUsvl6wrXuDNXTYe5KtgY0fCFrAMhCZzLPRxshxexx06pWWWuu92kPQVd75qiiBtAAac_rwD6W_7VF-9thyXc2vyn3glK1wY9yzuuJw')"></div>
+<div class="hero-image-float mt-lg mb-md">
+<img src="images/image_aplication.jpg" alt="Solicitar aplicaciones desde la app" width="880" height="440"/>
 </div></section>
 <!-- 2. VERSATILITY SECTION -->
 <section class="space-y-md">
@@ -198,23 +222,23 @@ Simple. Claro. Rápido.
 <!-- Card 1 -->
 <div class="glass-card p-md flex flex-col items-center text-center space-y-sm min-h-[140px] justify-center" style="background: rgb(255, 255, 255); border: 1px solid rgb(227, 226, 231); box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px; backdrop-filter: none;">
 <div class="w-12 h-12 rounded-full bg-[#47C278]/10 flex items-center justify-center mb-xs">
-<span class="material-symbols-outlined text-[#47C278]" style="font-size: 28px;">precision_manufacturing</span>
+<svg class="mui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8M12 20c-3.35 0-6-2.57-6-6.2 0-2.34 1.95-5.44 6-9.14 4.05 3.7 6 6.79 6 9.14 0 3.63-2.65 6.2-6 6.2"/></svg>
 </div>
-<span class="font-title-md text-label-md leading-tight">Pulverizaciones Inteligentes</span>
+<span class="font-title-md text-label-md leading-tight">Pulverizaciones</span>
 </div>
 <!-- Card 2 -->
 <div class="glass-card p-md flex flex-col items-center text-center space-y-sm min-h-[140px] justify-center" style="background: rgb(255, 255, 255); border: 1px solid rgb(227, 226, 231); box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px; backdrop-filter: none;">
 <div class="w-12 h-12 rounded-full bg-[#47C278]/10 flex items-center justify-center mb-xs">
 <span class="material-symbols-outlined text-[#47C278]" style="font-size: 28px;">grass</span>
 </div>
-<span class="font-title-md text-label-md leading-tight">Siembra Aérea</span>
+<span class="font-title-md text-label-md leading-tight">Siembra</span>
 </div>
 <!-- Card 3 -->
 <div class="glass-card p-md flex flex-col items-center text-center space-y-sm min-h-[140px] justify-center" style="background: rgb(255, 255, 255); border: 1px solid rgb(227, 226, 231); box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px; backdrop-filter: none;">
 <div class="w-12 h-12 rounded-full bg-[#47C278]/10 flex items-center justify-center mb-xs">
-<span class="material-symbols-outlined text-[#47C278]" style="font-size: 28px;">opacity</span>
+<svg class="mui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6"/></svg>
 </div>
-<span class="font-title-md text-label-md leading-tight">Fertilización Precisa</span>
+<span class="font-title-md text-label-md leading-tight">Fertilización</span>
 </div>
 <!-- Card 4 -->
 <div class="glass-card p-md flex flex-col items-center text-center space-y-sm min-h-[140px] justify-center" style="background: rgb(255, 255, 255); border: 1px solid rgb(227, 226, 231); box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px; backdrop-filter: none;">
