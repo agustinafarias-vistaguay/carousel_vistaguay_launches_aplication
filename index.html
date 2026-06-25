@@ -316,10 +316,10 @@ Accedé a una red de profesionales con equipos de última generación listos par
 </main>
 <script>
 function handleDeepLink() {
-  const payload = {
+    const payload = {
     type: 'NAVIGATE',
-    screen: 'RequestFlow', // Placeholder for the app screen, I can customize this later
-    params: { id: '123' }  // Placeholder for parameters
+    screen: 'NewTaskStepTwo', // Placeholder for the app screen, I can customize this later
+    params: { taskType: 1, fromTab: true }  // Placeholder for parameters
   };
   
   // Checking if the bridge is available before sending the message
